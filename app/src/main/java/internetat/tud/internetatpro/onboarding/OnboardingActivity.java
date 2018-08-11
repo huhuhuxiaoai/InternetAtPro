@@ -119,7 +119,7 @@ public class OnboardingActivity extends AppCompatActivity {
         viewPager.setAdapter(pagerAdapter);
         buttonFinish = findViewById(R.id.buttonFinish);
         buttonFinish.setText(R.string.onboarding_finish_button_description_wait);
-        buttonFinish.setEnabled(false);
+        buttonFinish.setEnabled(true);
         buttonNext = findViewById(R.id.imageButtonNext);
         buttonPre = findViewById(R.id.imageButtonPre);
         indicators = new ImageView[] {
