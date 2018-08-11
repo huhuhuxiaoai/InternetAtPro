@@ -32,11 +32,11 @@
     <string name="onboarding_next_button_description">Next</string>
     <string name="onboarding_finish_button_description">Finish</string>
     <string name="onboarding_pre_button_description">Pre</string>
-    <string name="onboarding_section_1">Step1:Das Füllstand des Tanks</string>
-    <string name="onboarding_intro_1">Hier können Sie das Füllstand beobachten</string>
-    <string name="onboarding_section_2">Step2:Erstellen</string>
+    <string name="onboarding_section_1">Füllstand anzeigen</string>
+    <string name="onboarding_intro_1">Zuerst können Sie das Füllstand beobachten</string>
+    <string name="onboarding_section_2">Erstellen</string>
     <string name="onboarding_intro_2">Hier können Sie Umpumpen state ansehen und erstellen</string>
-    <string name="onboarding_section_3">Step3: Quellen- und Zieltank auswählen</string>
+    <string name="onboarding_section_3">Umpumpen</string>
     <string name="onboarding_intro_3">Hier können Sie nach der Wunsch Quellen- und ZielTank aüswählen, dann können Sie zurück zum ersten Page das Fullstand ansehen</string>
     <string name="onboarding_finish_button_description_wait">Preparing, please wait…</string>
     <!--onboarding end-->

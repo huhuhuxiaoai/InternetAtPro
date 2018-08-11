@@ -118,7 +118,7 @@ public class OnboardingActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(pagerAdapter);
         buttonFinish = findViewById(R.id.buttonFinish);
-        buttonFinish.setText(R.string.onboarding_finish_button_description_wait);
+        //buttonFinish.setText(R.string.onboarding_finish_button_description_wait);
         buttonFinish.setEnabled(true);
         buttonNext = findViewById(R.id.imageButtonNext);
         buttonPre = findViewById(R.id.imageButtonPre);
@@ -141,9 +141,6 @@ public class OnboardingActivity extends AppCompatActivity {
             );
         }
     }
-
-
-
 
 
     private void navigateToMainActivity() {
