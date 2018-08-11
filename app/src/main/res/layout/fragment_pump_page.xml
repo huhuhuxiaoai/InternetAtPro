@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_pump_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="@string/pump_page_title"
+            android:background="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/title" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_space" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_pump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/umpumpen_state" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white"></View>
+            <TextView
+                android:id="@+id/text_pumping_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pumping_inactive"
+                android:textAlignment="center"
+                android:textColor="@color/active_ui_element"
+                android:textSize="15dp"/>
+               <!-- android:textSize="@dimen/text" -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white"></View>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_space" />
+
+        <LinearLayout
+            android:id="@+id/button_toggle_pumping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/button_padding"
+            android:paddingTop="@dimen/button_padding">
+
+            <ImageView
+                android:id="@+id/image_toggle_pumping_start_button"
+                android:layout_width="@dimen/inline_action_button"
+                android:layout_height="@dimen/inline_action_button"
+                android:background="@color/black"
+                android:contentDescription="@string/toggle_pumping"
+                android:src="@mipmap/ic_action_start"/>
+
+            <Space
+                android:layout_width="@dimen/horizontal_space"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/text_toggle_pumping_start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text" />
+            <Space
+                android:layout_width="@dimen/horizontal_space"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_toggle_pumping__stop_button"
+                android:layout_width="@dimen/inline_action_button"
+                android:layout_height="@dimen/inline_action_button"
+                android:background="@color/black"
+                android:contentDescription="@string/toggle_pumping"
+                android:src="@mipmap/ic_action_stop"/>
+
+            <Space
+                android:layout_width="@dimen/horizontal_space"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/text_toggle_pumping_stop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

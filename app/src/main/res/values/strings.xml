@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Internet AT</string>
+    <string name="tank_page_title">Füllstand</string>
+    <string name="pump_page_title">Umpumpen</string>
+    <string name="tank1">Tank 1</string>
+    <string name="tank2">Tank 2</string>
+    <string name="tank3">Tank 3</string>
+    <string name="tank_1_value">tank_value</string>
+    <string name="umpumpen_state">Umpumpen State</string>
+    <string name="pumping_active">gestartet\nQuelle: Behälter\u00A0%1$d\nZiel: Behälter\u00A0%2$d</string>
+    <string name="pumping_inactive">\ngestoppt\n</string>
+    <string name="start"><i>Pump Over</i></string>
+    <string name="stop"><i>Stop</i></string>
+    <string name="title_activity_choose">ChooseActivity</string>
+    <string name="title_activity_choose_source">ChooseSourceActivity</string>
+    <string name="choose_source_title">Quellbehälter wählen</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="cancel"><i>Stop Pumping</i></string>
+    <!--<string name="stopbutton"><i>Stop</i></string>-->
+    <string name="title_activity_choose_target">ChooseTargetActivity</string>
+    <string name="choose_target_title">Zielbehälter wählen</string>
+    <string name="no_connection">keine Verbindung zum Server</string>
+    <string name="warning">Warnung</string>
+    <string name="toggle_pumping">Umpumpen starten/stoppen</string>
+    <string name="title_activity_onbording">OnbordingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--onboarding-->
+    <string name="onboarding_next_button_description">Next</string>
+    <string name="onboarding_finish_button_description">Finish</string>
+    <string name="onboarding_pre_button_description">Pre</string>
+    <string name="onboarding_section_1">Step1:Das Füllstand des Tanks</string>
+    <string name="onboarding_intro_1">Hier können Sie das Füllstand beobachten</string>
+    <string name="onboarding_section_2">Step2:Erstellen</string>
+    <string name="onboarding_intro_2">Hier können Sie Umpumpen state ansehen und erstellen</string>
+    <string name="onboarding_section_3">Step3: Quellen- und Zieltank auswählen</string>
+    <string name="onboarding_intro_3">Hier können Sie nach der Wunsch Quellen- und ZielTank aüswählen, dann können Sie zurück zum ersten Page das Fullstand ansehen</string>
+    <string name="onboarding_finish_button_description_wait">Preparing, please wait…</string>
+    <!--onboarding end-->
+</resources>

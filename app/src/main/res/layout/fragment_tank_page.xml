@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_tank_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tank_page_title"
+            android:background="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/title" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/half_tank_interspace"
+                android:paddingRight="@dimen/half_tank_interspace">
+
+                <Space
+                    android:id="@+id/space_1"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="@dimen/text" />
+
+                <View
+                    android:id="@+id/view_tank_1"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="@dimen/tank_height"
+                    android:layout_below="@id/space_1"
+                    android:background="@color/darker_ui_element" />
+
+                <View
+                    android:id="@+id/view_level_1"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@id/view_tank_1"
+                    android:background="@color/active_ui_element" />
+                    />
+
+                <TextView
+                    android:id="@+id/text_tank_1"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_level_1"
+                    android:text="@string/tank1"
+                    android:textAlignment="center"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/text" />
+
+                <ImageView
+                    android:id="@+id/image_warning_1"
+                    android:layout_width="@dimen/warning_icon_size"
+                    android:layout_height="@dimen/warning_icon_size"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/warning"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/half_tank_interspace"
+                android:paddingRight="@dimen/half_tank_interspace">
+
+                <Space
+                    android:id="@+id/space_2"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="@dimen/text" />
+
+                <View
+                    android:id="@+id/view_tank_2"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="@dimen/tank_height"
+                    android:layout_below="@id/space_2"
+                    android:background="@color/darker_ui_element" />
+
+                <View
+                    android:id="@+id/view_level_2"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@id/view_tank_2"
+                    android:background="@color/active_ui_element" />
+
+                <TextView
+                    android:id="@+id/text_tank_2"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_tank_2"
+                    android:text="@string/tank2"
+                    android:textAlignment="center"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/text" />
+
+                <ImageView
+                    android:id="@+id/image_warning_2"
+                    android:layout_width="@dimen/warning_icon_size"
+                    android:layout_height="@dimen/warning_icon_size"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/warning"
+                   />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/half_tank_interspace"
+                android:paddingRight="@dimen/half_tank_interspace">
+
+                <Space
+                    android:id="@+id/space_3"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="@dimen/text" />
+
+                <View
+                    android:id="@+id/view_tank_3"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="@dimen/tank_height"
+                    android:layout_below="@id/space_3"
+                    android:background="@color/darker_ui_element" />
+
+                <View
+                    android:id="@+id/view_level_3"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@id/view_tank_3"
+                    android:background="@color/active_ui_element" />
+
+                <TextView
+                    android:id="@+id/text_tank_3"
+                    android:layout_width="@dimen/tank_width"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_tank_3"
+                    android:text="@string/tank3"
+                    android:textAlignment="center"
+                    android:textColor="@color/accent"
+                    android:textSize="@dimen/text" />
+
+                <ImageView
+                    android:id="@+id/image_warning_3"
+                    android:layout_width="@dimen/warning_icon_size"
+                    android:layout_height="@dimen/warning_icon_size"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/warning"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

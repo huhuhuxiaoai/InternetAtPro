@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/box_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context="MainActivity"
+    tools:deviceIds="wear">
+
+    <android.support.wearable.view.GridViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.wearable.view.DotsPageIndicator
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <LinearLayout
+        android:id="@+id/overlay_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar_loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/overlay_no_connection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/no_connection"
+            android:src="@mipmap/ic_action_cloud_off" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_space" />
+
+        <TextView
+            android:id="@+id/text_no_connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_connection"
+            android:textAlignment="center"
+            android:textColor="@color/accent"
+            android:textSize="@dimen/text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/overlay_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressbar_start"
+            style="@android:style/Widget.Material.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wird geladet..."
+            android:textAlignment="center"
+            android:textSize="10dp"/>
+    </LinearLayout>
+</android.support.wear.widget.BoxInsetLayout>
+

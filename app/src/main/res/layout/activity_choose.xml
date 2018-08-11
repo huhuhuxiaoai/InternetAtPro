@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_pump_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="@string/pump_page_title"
+            android:background="@color/black"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/title" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vertical_space" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/half_tank_interspace"
+                android:paddingRight="@dimen/half_tank_interspace">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VON"
+                    android:textSize="10dp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/button_von_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/button_padding">
+
+                        <TextView
+                            android:layout_width="@dimen/inline_action_button"
+                            android:layout_height="@dimen/inline_action_button"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:text="@string/one"
+                            android:textAlignment="center"
+                            android:textColor="@color/light_grey"
+                            android:textSize="@dimen/title" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="@dimen/horizontal_space"
+                        android:layout_height="match_parent" />
+
+                    <FrameLayout
+                        android:id="@+id/button_von_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/button_padding">
+
+                        <TextView
+                            android:layout_width="@dimen/inline_action_button"
+                            android:layout_height="@dimen/inline_action_button"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:text="@string/two"
+                            android:textAlignment="center"
+                            android:textColor="@color/light_grey"
+                            android:textSize="@dimen/title" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="@dimen/horizontal_space"
+                        android:layout_height="match_parent" />
+
+                    <FrameLayout
+                        android:id="@+id/button_von_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/button_padding">
+
+                        <TextView
+                            android:layout_width="@dimen/inline_action_button"
+                            android:layout_height="@dimen/inline_action_button"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:text="@string/three"
+                            android:textAlignment="center"
+                            android:textColor="@color/light_grey"
+                            android:textSize="@dimen/title" />
+                    </FrameLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/half_tank_interspace"
+                android:paddingRight="@dimen/half_tank_interspace">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NACH"
+                    android:textSize="10dp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/button_nach_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/button_padding">
+
+                        <TextView
+                            android:layout_width="@dimen/inline_action_button"
+                            android:layout_height="@dimen/inline_action_button"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:text="@string/one"
+                            android:textAlignment="center"
+                            android:textColor="@color/light_grey"
+                            android:textSize="@dimen/title" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="@dimen/horizontal_space"
+                        android:layout_height="match_parent" />
+
+                    <FrameLayout
+                        android:id="@+id/button_nach_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/button_padding">
+
+                        <TextView
+                            android:layout_width="@dimen/inline_action_button"
+                            android:layout_height="@dimen/inline_action_button"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:text="@string/two"
+                            android:textAlignment="center"
+                            android:textColor="@color/light_grey"
+                            android:textSize="@dimen/title" />
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="@dimen/horizontal_space"
+                        android:layout_height="match_parent" />
+
+                    <FrameLayout
+                        android:id="@+id/button_nach_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/button_padding">
+
+                        <TextView
+                            android:layout_width="@dimen/inline_action_button"
+                            android:layout_height="@dimen/inline_action_button"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:text="@string/three"
+                            android:textAlignment="center"
+                            android:textColor="@color/light_grey"
+                            android:textSize="@dimen/title" />
+                    </FrameLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/button_toggle_pumping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/button_padding"
+            android:paddingTop="@dimen/button_padding">
+
+            <ImageView
+                android:id="@+id/image__pumping_start_button"
+                android:layout_width="@dimen/inline_action_button"
+                android:layout_height="@dimen/inline_action_button"
+                android:background="@color/black"
+                android:contentDescription="@string/toggle_pumping"
+                android:src="@mipmap/ic_action_start"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/text_pumping_start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:textColor="@color/accent"
+                android:textSize="@dimen/text" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/image_pumping_cancel_button"
+                android:layout_width="@dimen/inline_action_button"
+                android:layout_height="@dimen/inline_action_button"
+                android:background="@color/black"
+                android:contentDescription="@string/toggle_pumping"
+                android:src="@mipmap/ic_cancel"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/text_pumping_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="@color/accent"
+                android:textSize="@dimen/text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
